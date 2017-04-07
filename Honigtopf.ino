@@ -1,5 +1,12 @@
 #include <LiquidCrystal.h>
+#include <OneWire.h> 
+#include <DallasTemperature.h>
 
+/*#define ONE_WIRE_BUS 2
+
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire); 
+float currentTemp = 0;*/
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 float tempOffset = 2;
 float targetTemp = 40;
@@ -10,11 +17,13 @@ void setup() {
   pinMode(6, INPUT_PULLUP);
   pinMode(7, INPUT_PULLUP);
   permDisplay();
+  //sensors.begin();  
 }
 
 void loop() {
   tempAdjust();
   tempDisplay(); 
+  //readTemp();
 }
 
 void permDisplay() {
@@ -42,11 +51,17 @@ void tempAdjust() {
 
   if (buttonUp == 0) {
     targetTemp += 0.5;
-    delay(250);
+    delay(200);
     }
   if (buttonDown == 0) {
     targetTemp -= 0.5;
-    delay(250);
+    delay(200);
   }
+}
+
+void readTemp() {
+  sensors.requestTemperatures();
+  currentTemp= sensors.getTempCByIndex(0); // 0 refers to the first IC on the wire 
+  delay(100);
 }
 
