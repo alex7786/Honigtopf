@@ -2,7 +2,7 @@
 #include <OneWire.h> 
 #include <DallasTemperature.h>
 
-/*#define ONE_WIRE_BUS 2
+/*#define ONE_WIRE_BUS 2  //PIN ANPASSEN!!!
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire); 
