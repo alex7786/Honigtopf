@@ -5,8 +5,8 @@
 /*#define ONE_WIRE_BUS 2  //PIN ANPASSEN!!!
 
 OneWire oneWire(ONE_WIRE_BUS);
-DallasTemperature sensors(&oneWire); 
-float currentTemp = 0;*/
+DallasTemperature sensors(&oneWire); */
+float currentTemp = 0;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 float tempOffset = 2;
 float targetTemp = 40;
