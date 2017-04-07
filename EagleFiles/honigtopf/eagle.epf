@@ -18,6 +18,7 @@ UsedLibrary="C:/EAGLE-7.6.0/lbr/74xx-little-de.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/74xx-little-us.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/74xx-us.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/751xx.lbr"
+UsedLibrary="C:/EAGLE-7.6.0/lbr/E14_Arduino_published.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/IQD-Frequency-Products.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/advanced-test-technologies.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/agilent-technologies.lbr"
@@ -350,7 +351,7 @@ UsedLibrary="C:/EAGLE-7.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -8 2551 1368"
+Loc="0 0 2559 1376"
 State=1
 Number=0
 
