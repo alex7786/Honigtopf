@@ -13,10 +13,11 @@ int pinSSR = 8;        //CHECK PIN!!!
 //VARIABLES
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire); 
-float currentTemp = 0;
 float tempOffset = 2;
 float targetTemp = 40;
-float isTemp = 99.9;
+float currentTemp = 99.9;
+float maxTemp = 80;
+float minTemp = 10;
 
 void setup() {
   lcd.begin(16, 2);
@@ -31,7 +32,7 @@ void loop() {
   tempAdjust();
   tempDisplay(); 
   //readTemp();
-  //tempControl();
+  tempControl();
 }
 
 void permDisplay() {                //permanent display elements
@@ -50,7 +51,7 @@ void tempDisplay() {                //changing display elements
   lcd.setCursor(1, 1);
   lcd.print(targetTemp, 1);
   lcd.setCursor(10, 1);
-  lcd.print(isTemp, 1);
+  lcd.print(currentTemp, 1);
 }
 
 void tempAdjust() {                //adjusting of the target temperature
@@ -65,6 +66,14 @@ void tempAdjust() {                //adjusting of the target temperature
     targetTemp -= 0.5;
     delay(200);
   }
+  if(targetTemp > maxTemp)                //setting max and min temp
+  {
+    targetTemp = maxTemp;
+  }
+  else if(targetTemp < minTemp)
+  {
+    targetTemp = minTemp;
+  }
 }
 
 void readTemp() {                //readout of the DS18B20 sensor
@@ -73,7 +82,7 @@ void readTemp() {                //readout of the DS18B20 sensor
   delay(100);
 }
 
-void tempControl() {                //controlling the SSR with an +- tempOffset big hysteresis
+void tempControl() {                //controlling the SSR with an +- tempOffset high hysteresis
   if (digitalRead(pinSSR) == false && currentTemp <= (targetTemp - tempOffset)){
     digitalWrite(pinSSR, HIGH);
   }

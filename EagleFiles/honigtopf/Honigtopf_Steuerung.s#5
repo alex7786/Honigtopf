@@ -6279,6 +6279,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="S2_DOWN" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="R2" library="pot" deviceset="TRIM_EU-" device="CA14V"/>
 <part name="DIS1" library="display-lcd" deviceset="TUXGR_16X2_R2" device=""/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0411/15" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -6292,6 +6293,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="S2_DOWN" gate="1" x="101.6" y="86.36"/>
 <instance part="R2" gate="1" x="99.06" y="48.26"/>
 <instance part="DIS1" gate="G$1" x="147.32" y="60.96"/>
+<instance part="R3" gate="G$1" x="157.48" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -6329,13 +6331,25 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="R2" gate="1" pin="E"/>
 <wire x1="99.06" y1="53.34" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <junction x="48.26" y="68.58"/>
 <pinref part="DIS1" gate="G$1" pin="GND"/>
+<wire x1="81.28" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="50.8" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="99.06" y="55.88"/>
+<pinref part="DIS1" gate="G$1" pin="R/W"/>
+<wire x1="139.7" y1="50.8" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="40.64" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<junction x="81.28" y="68.58"/>
+<pinref part="DIS1" gate="G$1" pin="NC@2"/>
+<wire x1="167.64" y1="50.8" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="20.32" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<junction x="71.12" y="68.58"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -6364,6 +6378,10 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="132.08" y1="50.8" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <junction x="99.06" y="35.56"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<junction x="48.26" y="15.24"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6390,6 +6408,80 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="134.62" y1="50.8" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R2" gate="1" pin="S"/>
 <wire x1="134.62" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="RS"/>
+<wire x1="137.16" y1="50.8" x2="137.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
+<wire x1="0" y1="0" x2="0" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D12"/>
+<wire x1="0" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="E"/>
+<wire x1="142.24" y1="50.8" x2="142.24" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D11"/>
+<wire x1="-2.54" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="68.58" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="D4"/>
+<wire x1="154.94" y1="50.8" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="25.4" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D5"/>
+<wire x1="63.5" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="D4"/>
+<wire x1="40.64" y1="63.5" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="71.12" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="DIS1" gate="G$1" pin="D5"/>
+<wire x1="157.48" y1="27.94" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="D6"/>
+<wire x1="160.02" y1="50.8" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="30.48" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D3"/>
+<wire x1="66.04" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="78.74" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="PCB1" gate="G$1" pin="D2"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="66.04" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="DIS1" gate="G$1" pin="D7"/>
+<wire x1="76.2" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="33.02" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="NC@1"/>
+<wire x1="165.1" y1="50.8" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
