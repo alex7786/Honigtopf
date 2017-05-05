@@ -3,17 +3,17 @@
 #include <DallasTemperature.h>
 
 //PINS
-#define ONE_WIRE_BUS 9  //CHECK PIN!!!
+#define ONE_WIRE_BUS 9
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-int pinButtonUp = 6;
-int pinButtonDown = 7;
-int pinSSR = 8;        //CHECK PIN!!!
+const int pinButtonUp = 6;
+const int pinButtonDown = 7;
+const int pinSSR = 8;
 
 //VARIABLES
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire); 
-float tempOffset = 2;
+float tempOffset = 1;
 float targetTemp = 40;
 float currentTemp = 99.9;
 float maxTemp = 80;
@@ -31,7 +31,7 @@ void setup() {
 void loop() {
   tempAdjust();
   tempDisplay(); 
-  //readTemp();
+  readTemp();
   tempControl();
 }
 
@@ -79,7 +79,7 @@ void tempAdjust() {                //adjusting of the target temperature
 void readTemp() {                //readout of the DS18B20 sensor
   sensors.requestTemperatures();
   currentTemp= sensors.getTempCByIndex(0); // 0 refers to the first IC on the wire 
-  delay(100);
+  //delay(100);
 }
 
 void tempControl() {                //controlling the SSR with an +- tempOffset high hysteresis
