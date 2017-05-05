@@ -6564,13 +6564,13 @@ Source: tuxgr_12x2_r2.pdf</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="PCB1" gate="G$1" pin="D2"/>
-<wire x1="45.72" y1="63.5" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="66.04" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="DIS1" gate="G$1" pin="D7"/>
-<wire x1="76.2" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="33.02" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="33.02" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D2"/>
+<wire x1="68.58" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

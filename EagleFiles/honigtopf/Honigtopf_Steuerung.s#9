@@ -6329,13 +6329,19 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="R2" gate="1" pin="E"/>
 <wire x1="99.06" y1="53.34" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <junction x="48.26" y="68.58"/>
 <pinref part="DIS1" gate="G$1" pin="GND"/>
+<wire x1="81.28" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="50.8" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <junction x="99.06" y="55.88"/>
+<pinref part="DIS1" gate="G$1" pin="R/W"/>
+<wire x1="139.7" y1="50.8" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="40.64" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<junction x="81.28" y="68.58"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -6390,6 +6396,28 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="134.62" y1="50.8" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R2" gate="1" pin="S"/>
 <wire x1="134.62" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="RS"/>
+<wire x1="137.16" y1="50.8" x2="137.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
+<wire x1="0" y1="0" x2="0" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D12"/>
+<wire x1="0" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="E"/>
+<wire x1="142.24" y1="50.8" x2="142.24" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="PCB1" gate="G$1" pin="D11"/>
+<wire x1="-2.54" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="68.58" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
