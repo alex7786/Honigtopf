@@ -6095,18 +6095,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <package name="TUXGR_16X2_R2">
 <description>&lt;b&gt;Tuxgraphics LCD display 16x2 characters&lt;/b&gt; reflective, without background light&lt;p&gt;
 Source: tuxgr_12x2_r2.pdf</description>
-<wire x1="-39.9" y1="17.9" x2="39.9" y2="17.9" width="0.2032" layer="21"/>
-<wire x1="39.9" y1="17.9" x2="39.9" y2="-17.9" width="0.2032" layer="21"/>
-<wire x1="39.9" y1="-17.9" x2="-39.9" y2="-17.9" width="0.2032" layer="21"/>
-<wire x1="-39.9" y1="-17.9" x2="-39.9" y2="17.9" width="0.2032" layer="21"/>
-<wire x1="-36.75" y1="12" x2="36.75" y2="12" width="0.2032" layer="21"/>
-<wire x1="36.75" y1="12" x2="36.75" y2="-12.6" width="0.2032" layer="21"/>
-<wire x1="36.75" y1="-12.6" x2="-36.75" y2="-12.6" width="0.2032" layer="21"/>
-<wire x1="-36.75" y1="-12.6" x2="-36.75" y2="12" width="0.2032" layer="21"/>
-<wire x1="-32.15" y1="6.5" x2="32.15" y2="6.5" width="0.2032" layer="21"/>
-<wire x1="32.15" y1="6.5" x2="32.15" y2="-7.1" width="0.2032" layer="21"/>
-<wire x1="32.15" y1="-7.1" x2="-32.15" y2="-7.1" width="0.2032" layer="21"/>
-<wire x1="-32.15" y1="-7.1" x2="-32.15" y2="6.5" width="0.2032" layer="21"/>
 <pad name="1" x="-32" y="15.5" drill="1" diameter="1.6764"/>
 <pad name="2" x="-29.46" y="15.5" drill="1" diameter="1.6764"/>
 <pad name="3" x="-26.92" y="15.5" drill="1" diameter="1.6764"/>
@@ -6125,42 +6113,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pad name="16" x="6.1" y="15.5" drill="1" diameter="1.6764"/>
 <text x="-38.1" y="18.415" size="1.27" layer="25">&gt;NAME</text>
 <text x="0.635" y="18.415" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-28.85" y1="0.1" x2="-25.9" y2="4.45" layer="21"/>
-<rectangle x1="-28.85" y1="-5.05" x2="-25.9" y2="-0.7" layer="21"/>
-<rectangle x1="-25.2" y1="0.1" x2="-22.25" y2="4.45" layer="21"/>
-<rectangle x1="-25.2" y1="-5.05" x2="-22.25" y2="-0.7" layer="21"/>
-<rectangle x1="-21.55" y1="0.1" x2="-18.6" y2="4.45" layer="21"/>
-<rectangle x1="-21.55" y1="-5.05" x2="-18.6" y2="-0.7" layer="21"/>
-<rectangle x1="-17.9" y1="0.1" x2="-14.95" y2="4.45" layer="21"/>
-<rectangle x1="-17.9" y1="-5.05" x2="-14.95" y2="-0.7" layer="21"/>
-<rectangle x1="-14.25" y1="0.1" x2="-11.3" y2="4.45" layer="21"/>
-<rectangle x1="-14.25" y1="-5.05" x2="-11.3" y2="-0.7" layer="21"/>
-<rectangle x1="-10.6" y1="0.1" x2="-7.65" y2="4.45" layer="21"/>
-<rectangle x1="-10.6" y1="-5.05" x2="-7.65" y2="-0.7" layer="21"/>
-<rectangle x1="-6.95" y1="0.1" x2="-4" y2="4.45" layer="21"/>
-<rectangle x1="-6.95" y1="-5.05" x2="-4" y2="-0.7" layer="21"/>
-<rectangle x1="-3.3" y1="0.1" x2="-0.35" y2="4.45" layer="21"/>
-<rectangle x1="-3.3" y1="-5.05" x2="-0.35" y2="-0.7" layer="21"/>
-<rectangle x1="0.35" y1="0.1" x2="3.3" y2="4.45" layer="21"/>
-<rectangle x1="0.35" y1="-5.05" x2="3.3" y2="-0.7" layer="21"/>
-<rectangle x1="4" y1="0.1" x2="6.95" y2="4.45" layer="21"/>
-<rectangle x1="4" y1="-5.05" x2="6.95" y2="-0.7" layer="21"/>
-<rectangle x1="7.65" y1="0.1" x2="10.6" y2="4.45" layer="21"/>
-<rectangle x1="7.65" y1="-5.05" x2="10.6" y2="-0.7" layer="21"/>
-<rectangle x1="11.3" y1="0.1" x2="14.25" y2="4.45" layer="21"/>
-<rectangle x1="11.3" y1="-5.05" x2="14.25" y2="-0.7" layer="21"/>
-<rectangle x1="14.95" y1="0.1" x2="17.9" y2="4.45" layer="21"/>
-<rectangle x1="14.95" y1="-5.05" x2="17.9" y2="-0.7" layer="21"/>
-<rectangle x1="18.6" y1="0.1" x2="21.55" y2="4.45" layer="21"/>
-<rectangle x1="18.6" y1="-5.05" x2="21.55" y2="-0.7" layer="21"/>
-<rectangle x1="22.25" y1="0.1" x2="25.2" y2="4.45" layer="21"/>
-<rectangle x1="22.25" y1="-5.05" x2="25.2" y2="-0.7" layer="21"/>
-<rectangle x1="25.9" y1="0.1" x2="28.85" y2="4.45" layer="21"/>
-<rectangle x1="25.9" y1="-5.05" x2="28.85" y2="-0.7" layer="21"/>
-<hole x="-37.5" y="-15.5" drill="2.5"/>
-<hole x="37.5" y="-15.5" drill="2.5"/>
 <hole x="-37.5" y="15.5" drill="2.5"/>
-<hole x="37.5" y="15.5" drill="2.5"/>
 </package>
 </packages>
 <symbols>
@@ -6256,6 +6209,29 @@ Source: tuxgr_12x2_r2.pdf</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="TUXGR_16X2_R2_OHNESILK" package="TUXGR_16X2_R2">
+<connects>
+<connect gate="G$1" pin="CONTR" pad="3"/>
+<connect gate="G$1" pin="D0" pad="7"/>
+<connect gate="G$1" pin="D1" pad="8"/>
+<connect gate="G$1" pin="D2" pad="9"/>
+<connect gate="G$1" pin="D3" pad="10"/>
+<connect gate="G$1" pin="D4" pad="11"/>
+<connect gate="G$1" pin="D5" pad="12"/>
+<connect gate="G$1" pin="D6" pad="13"/>
+<connect gate="G$1" pin="D7" pad="14"/>
+<connect gate="G$1" pin="E" pad="6"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="NC@1" pad="15"/>
+<connect gate="G$1" pin="NC@2" pad="16"/>
+<connect gate="G$1" pin="R/W" pad="5"/>
+<connect gate="G$1" pin="RS" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6681,7 +6657,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="167.64" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="20.32" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <junction x="71.12" y="68.58"/>
-<wire x1="-43.18" y1="53.34" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="53.34" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="53.34" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-2.54" x2="71.12" y2="-2.54" width="0.1524" layer="91"/>
@@ -6691,6 +6667,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="-45.72" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="35.56" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-35.56" y="53.34"/>
+<pinref part="JP1_SSR" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -6843,6 +6820,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,132.08,50.8,DIS1,VCC,5V,,,"/>
 <approved hash="202,1,144.78,50.8,DIS1,D0,,,,"/>
 <approved hash="202,1,147.32,50.8,DIS1,D1,,,,"/>
 <approved hash="202,1,149.86,50.8,DIS1,D2,,,,"/>
@@ -6853,6 +6831,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <approved hash="113,1,79.1295,86.36,S1_UP,,,,,"/>
 <approved hash="113,1,99.4495,86.5472,S2_DOWN,,,,,"/>
 <approved hash="113,1,-44.6966,56.0112,JP1_SSR,,,,,"/>
+<approved hash="113,1,-43.4336,38.2312,JP2_5V_IN,,,,,"/>
 </errors>
 </schematic>
 </drawing>

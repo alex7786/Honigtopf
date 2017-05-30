@@ -6279,6 +6279,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="S2_DOWN" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="R2" library="pot" deviceset="TRIM_EU-" device="CA14V"/>
 <part name="DIS1" library="display-lcd" deviceset="TUXGR_16X2_R2" device=""/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0411/15" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -6292,6 +6293,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="S2_DOWN" gate="1" x="101.6" y="86.36"/>
 <instance part="R2" gate="1" x="99.06" y="48.26"/>
 <instance part="DIS1" gate="G$1" x="147.32" y="60.96"/>
+<instance part="R3" gate="G$1" x="157.48" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -6376,6 +6378,10 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="132.08" y1="50.8" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <junction x="99.06" y="35.56"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<junction x="48.26" y="15.24"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6468,6 +6474,14 @@ Source: tuxgr_12x2_r2.pdf</description>
 <pinref part="DIS1" gate="G$1" pin="D7"/>
 <wire x1="76.2" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="33.02" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="DIS1" gate="G$1" pin="NC@1"/>
+<wire x1="165.1" y1="50.8" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="10.16" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

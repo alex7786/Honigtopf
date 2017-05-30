@@ -14,7 +14,7 @@ const int pinSSR = 8;
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire); 
 float tempOffset = 1;
-float targetTemp = 40;
+float targetTemp = 39;
 float currentTemp = 99.9;
 float maxTemp = 80;
 float minTemp = 10;

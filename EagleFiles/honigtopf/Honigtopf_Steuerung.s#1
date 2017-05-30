@@ -6606,6 +6606,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <part name="JP1_SSR" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
+<part name="JP2_5V_IN" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6623,6 +6624,7 @@ Source: tuxgr_12x2_r2.pdf</description>
 <instance part="JP1_SSR" gate="G$1" x="-43.18" y="53.34"/>
 <instance part="H1" gate="G$1" x="10.16" y="106.68"/>
 <instance part="H2" gate="G$1" x="38.1" y="106.68"/>
+<instance part="JP2_5V_IN" gate="G$1" x="-43.18" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -6679,11 +6681,16 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="167.64" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="20.32" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <junction x="71.12" y="68.58"/>
-<wire x1="-43.18" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="53.34" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="53.34" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-2.54" x2="71.12" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-2.54" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
 <junction x="71.12" y="20.32"/>
+<pinref part="JP2_5V_IN" gate="G$1" pin="2"/>
+<wire x1="-45.72" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="35.56" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-35.56" y="53.34"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -6699,7 +6706,8 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="48.26" y1="30.48" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="15.24" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="15.24" x2="-27.94" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="15.24" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="38.1" x2="-27.94" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="91.44" x2="-7.62" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="91.44" x2="-7.62" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-7.62" y="88.9"/>
@@ -6716,6 +6724,9 @@ Source: tuxgr_12x2_r2.pdf</description>
 <wire x1="152.4" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="10.16" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <junction x="48.26" y="15.24"/>
+<pinref part="JP2_5V_IN" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-27.94" y="38.1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
